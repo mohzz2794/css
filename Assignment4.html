@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<style>
+
+#heading{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #596A89;font-size:large;
+  margin-left:auto;    
+}
+#heading td{
+  border: none;
+  padding: 8px;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  padding: 12px 20px 12px 40px;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ccc;
+  float:right;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #596A89;font-size:large;
+  margin-left:auto;          
+}
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#customers tr:hover {background-color: #ddd;}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ffffff;
+  color: #596A89;
+}
+
+</style>
+</head>
+<body>
+  
+  <br><br><br>
+<table id="heading">
+  <tr>
+    <td><label style="color: #596A89;"for="MaxList">Show</label>
+    <select style="color: #596A89;box-sizing: border-box; border: none; border-bottom: 2px solid #ccc" id="list" name="EntryList">
+    <option value="5" selected>5</option>
+    <option value="15">15</option>
+    <option value="30">30</option>
+    <label for="freelancer"></label>
+  </select>
+  <label style="color: #596A89;" for="list">entries</label></td>
+    
+    
+    <td><span style="font-size:30px">Customer</span> <b><span style="font-size:30px">Details</b></span></td>
+    
+    
+    <td><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in a name"></td>
+  </tr>
+</table> 
+ 
+  
+<table id="customers">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Pin Code</th>
+    <th>Country</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Thomas Hardy</td>
+    <td>89 Chiaroscuro Rd</td>
+    <td>Portland</td>
+    <td>97219</td>
+    <td>USA</td>
+    <td><i class="fas fa-eye" style="color:#57ACF5;"><i class="fas fa-pencil-alt" style="color:#F3C110;padding-left:1em;padding-right:1em" > <i class="fas fa-trash" style="color:#E3472B;padding-left: 1em"></i></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Maria Anders</td>
+    <td>Obere Str 57</td>
+    <td>Berlin</td>
+    <td>12209</td>
+    <td>Germany</td>
+    <td><i class="fas fa-eye" style="color:#57ACF5;"><i class="fas fa-pencil-alt" style="color:#F3C110;padding-left:1em;padding-right:1em" > <i class="fas fa-trash" style="color:#E3472B;padding-left: 1em"></i></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Fran Wilson</td>
+    <td>C/Araquil,67</td>
+    <td>Madrid</td>
+    <td>28023</td>
+    <td>Spain</td>
+    <td><i class="fas fa-eye" style="color:#57ACF5;"><i class="fas fa-pencil-alt" style="color:#F3C110;padding-left:1em;padding-right:1em" > <i class="fas fa-trash" style="color:#E3472B;padding-left: 1em"></i></td>
+  </tr>
+  <tr>
+     <td>4</td>
+     <td>Dominique perrier 25</td>
+     <td>rue Lauriston</td>
+     <td>Paris</td>
+     <td>75016</td>
+     <td>France</td>
+     <td><i class="fas fa-eye" style="color:#57ACF5;"><i class="fas fa-pencil-alt" style="color:#F3C110;padding-left:1em;padding-right:1em" > <i class="fas fa-trash" style="color:#E3472B;padding-left: 1em"></i></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Martin Blank</td>
+    <td>Via Monte Bianco34</td>
+    <td>Turin</td>
+    <td>10100</td>
+    <td>Italy</td>
+    <td><i class="fas fa-eye" style="color:#57ACF5;"><i class="fas fa-pencil-alt" style="color:#F3C110;padding-left:1em;padding-right:1em" > <i class="fas fa-trash" style="color:#E3472B;padding-left: 1em"></i></td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("customers");
+  tr = table.getElementsByTagName("tr");
+  for (i = 1; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>

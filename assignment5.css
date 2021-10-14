@@ -1,0 +1,149 @@
+body {
+font-family: 'Tajawal', sans-serif;font-family: "Open Sans", sans-serif;color: white;
+display: block;
+margin:8px;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+  background-color: #000000;
+}
+.right {
+  right: 0;
+  background-color: #51A977;
+}
+#centered{
+  top: 40%;
+  left: 35%;
+  text-align: left;
+  }
+.centered img {
+   width: 140px;
+   padding-top: 15px;
+   padding-bottom: 70px;
+   border: 1px solid black;
+   margin-left:60px;
+    }
+#left_box {
+  background-color: #000000;
+  width: 550px;
+height: 273px;
+  /*border: 2px solid green;*/
+  margin-left:60px;
+  margin-right:10px;
+}
+#right_box {
+  background-color: #51A977;
+  width: 550px;
+  height: 273px;
+  /*border: 2px solid green;*/
+  margin-top: 20%;
+  margin-left: 35%;
+  text-align: left;
+  margin-left:90px;
+  margin-right:10px;
+}
+h1{
+font-weight: 200;
+font-style: normal;
+font-variant: normal; 
+font-size: 38px; 
+line-height: 25px;
+color: #BDBFC2;
+}
+h2{
+opacity: 0.5;
+font-weight: 100;
+font-style: normal;
+font-size: 18px;
+line-height: 24px;
+font-style: normal;
+color: #BDBFC2;
+}
+#para{
+text-align:left;
+opacity:0.5;
+font-size: 12px;
+font-style: normal;
+font-variant: normal;
+line-height:20px;
+color: #BDBFC2;
+}
+a.button { 
+text-decoration: none;
+font-size: 11px;
+color: #ffffff;
+background-color: #51A977;
+background-size: 3px;
+border:2px solid #51A977;
+padding-top: 10px;
+padding-right: 25px;
+padding-bottom: 10px;
+padding-left: 25px;
+border-radius: 1px;
+font-family: 'Tajawal', sans-serif;
+color;font-weight: bold
+}
+a.password { 
+text-decoration: none;
+font-size: 11px;
+background-color: #51A977;
+position: absolute;
+left: 26%; top: 53%;
+text-decoration: none;
+color: white;
+}
+button.login { 
+text-decoration: none;
+font-size: 8px;
+border:2px solid #51A977;
+padding-top: 8px;
+padding-right: 20px;
+padding-bottom: 8px;
+padding-left: 20px;
+border-radius: 1px;
+font-family: 'Tajawal', sans-serif;
+color:#51A977;
+font-weight:bold;
+
+}
+.nav {
+background-color: #000000; 
+list-style-type: none;
+text-align: left;
+padding-top: 50px;
+padding-right: 10px;
+padding-bottom: 0px;
+padding-left: 1px;
+}
+.nav li {
+display: inline-block;
+font-family: "Open Sans", sans-serif;
+font-size: 10px;
+color: white;
+padding-top: 50px;
+padding-right: 20px;
+padding-bottom: 0px;
+padding-left: 5px;
+}
+a.footer{
+ text-decoration: none;
+ color:#BDBFC2;
+}
+.input {
+padding: 8px;
+font-size: 10px;
+color:#AAE2D3;
+display: block;
+border: none;
+border-bottom: 1px solid #AAE2D3;
+background-color:  #51A977;
+width: 80%;
